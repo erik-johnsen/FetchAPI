@@ -2,14 +2,24 @@
 body {
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	position: relative;
 }
 
 
 .page {
 	background-color: aqua;
-	width: 10px;
-	height: 10px;
+	width: 100%;
+	height: 100%;
 	display: none;
+}
+
+.main {
+	width: 400px;
+	height: 400px;
+	margin-left: 20rem;
+	margin-top: 4rem;
 }
 
 .sidebar {
@@ -25,3 +35,8 @@ body {
 .visible {
 	display: flex;
 }
+
+.not-visible {
+	display: none;
+}
+

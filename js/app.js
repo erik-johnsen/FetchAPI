@@ -55,10 +55,12 @@ const fetchData = async (attribute) => {
 
 
 const renderFilms = (info) => {
-	films.innerHTML = ""
+	
 	const ul = document.createElement('ul')
+	ul.classList.add('ul-content')
 	films.appendChild(ul)
 
+	ul.innerHTML = ""
 	info.forEach(element => {
 		const li = document.createElement('li')
 
