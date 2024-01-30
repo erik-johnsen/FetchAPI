@@ -1,19 +1,6 @@
 const sidebarButtons = document.querySelectorAll('.nav-button')
 const pages = document.querySelectorAll('.page')
 
-const fetchData = async () => {
-	try {
-		const response = await fetch('https://swapi.dev/api/films/1/')
-		const data = await response.json()
-		console.log(data);
-	} catch (error) {
-		console.log("Something went wrong!", error);
-	}
-	
-}
-
-fetchData()
-
 
 
 sidebarButtons.forEach(sidebarButton => {
