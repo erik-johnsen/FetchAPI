@@ -1,0 +1,27 @@
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+.page {
+	background-color: aqua;
+	width: 10px;
+	height: 10px;
+	display: none;
+}
+
+.sidebar {
+	margin-top: 9%;
+	margin-left: 1rem;
+}
+.nav-button {
+	font-size: 2rem;
+	padding: 0.9rem;
+	border-bottom: 1px solid black;
+}
+
+.visible {
+	display: flex;
+}
