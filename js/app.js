@@ -18,16 +18,16 @@ sidebarButtons.forEach(sidebarButton => {
 		})
 	
 
-	
+		fetchData(pageToDisplay)
 	}
 
 	sidebarButton.addEventListener("click", ShowPages)
 })
 
 
-const fetchData = async () => {
+const fetchData = async (attribute) => {
 	try {
-		const response = await fetch('https://swapi.dev/api/films/1/')
+		const response = await fetch(`https://swapi.dev/api/${attribute}`)
 		const data = await response.json()
 		console.log(data);
 	} catch (error) {
@@ -36,4 +36,19 @@ const fetchData = async () => {
 	
 }
 
-fetchData()
+
+
+
+const renderElements = (info) => {
+	
+	Object.keys(info).forEach(key => {
+		
+		const ulContainer = document.createElement("ul")
+		const liContainer = document.createElement("li")
+
+		show.appendChild(ulContainer)
+		ulContainer.appendChild(liContainer)
+
+		
+	})
+}
