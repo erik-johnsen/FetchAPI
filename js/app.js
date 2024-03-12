@@ -147,7 +147,7 @@ const renderPeople = (info) => {
 		gender.textContent = element.gender
 		
 		
-		if(["Biggs Darklighter", "Leia Organa", "Owen Lars", "R5-D4"].includes(element.name)) {
+		if(["Leia Organa", "C-3PO", "R5-D4"].includes(element.name)) {
 			image.src = `./assets/people/${element.name}.webp`
 		} else {
 			image.src = `./assets/people/${element.name}.jpeg`
@@ -237,7 +237,6 @@ const renderVehicles = (info) => {
 		manufacturer.textContent = element.manufacturer
 		crew.textContent = element.crew
 		maxSpeed.textContent = element.max_atmosphering_speed
-		console.log(element);
 		
 		if(element.name === "TIE bomber") {
 			image.src = `./assets/vehicles/${element.name}.avif`
