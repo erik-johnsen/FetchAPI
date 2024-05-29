@@ -14,5 +14,6 @@ Contributors:
 
 
 ### Related links
-	* Netlify: [FetchAPI](https://fetchstarwarsapi.netlify.app/)
-	* Git Hub: [Github Repository](https://github.com/erik-johnsen/FetchAPI)
+
+* Netlify: [FetchAPI](https://fetchstarwarsapi.netlify.app/)
+* Git Hub: [Github Repository](https://github.com/erik-johnsen/FetchAPI)
