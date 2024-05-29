@@ -5,6 +5,7 @@ const people = document.querySelector('.page-people')
 const planets = document.querySelector('.page-planets')
 const vehicles = document.querySelector('.page-vehicles')
 const mainContent = document.querySelector('.main')
+const landingPage = document.querySelector(".page-landing")
 
 
 
@@ -30,7 +31,7 @@ sidebarButtons.forEach(sidebarButton => {
 
 		pages.forEach(page => {
 			page.classList.remove("visible")
-	
+			landingPage.classList.remove("visible")
 			if (page.dataset.pages === pageToDisplay) {
 				page.classList.add("visible")
 			}
@@ -72,7 +73,6 @@ const fetchData = async (attribute) => {
 
 
 const renderFilms = (info) => {
-	// ul.innerHTML = ""
 	info.forEach(element => {
 		
 		const divContainer = document.createElement('div')
